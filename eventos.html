@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Eventos - Igledesarrollo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        primary: "#D4AF37",
+        secondary: "#7FB069",
+      },
+      fontFamily: {
+        display: ["Montserrat", "sans-serif"],
+        body: ["Open Sans", "sans-serif"],
+      },
+    },
+  },
+};
+</script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-body">
+
+<!-- Header -->
+<header class="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<a href="index.html" class="flex items-center space-x-3">
+<span class="material-icons-outlined text-primary text-4xl">agriculture</span>
+<span class="font-display font-bold text-xl">Igle<span class="text-primary">Desa</span>Rrollo</span>
+</a>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-gray-600 dark:text-gray-300 hover:text-secondary font-semibold text-sm" href="index.html">Inicio</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-secondary font-semibold text-sm" href="nosotros.html">Nosotros</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-secondary font-semibold text-sm" href="programas.html">Programas</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-secondary font-semibold text-sm" href="servicios.html">Servicios</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-secondary font-semibold text-sm" href="recursos.html">Recursos</a>
+<a class="bg-secondary hover:bg-green-600 text-white px-5 py-2 rounded-lg transition-all font-semibold text-sm border-b-2 border-secondary" href="eventos.html">Eventos</a>
+</nav>
+<button class="md:hidden text-gray-600 dark:text-gray-300" id="menuBtn">
+<span class="material-icons-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</header>
+
+<!-- Hero -->
+<section class="relative bg-gradient-to-r from-orange-600 to-orange-800 py-20 overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M30 0L60 30L30 60L0 30Z\" fill=\"white\" /%3E%3C/svg%3E'); background-size: 60px 60px;"></div>
+</div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+<h1 class="text-5xl md:text-6xl font-display font-bold text-white mb-6">Próximos Eventos</h1>
+<p class="text-xl text-orange-100 max-w-3xl mx-auto">Únete a nuestras conferencias, talleres y encuentros transformadores</p>
+</div>
+</section>
+
+<!-- Evento Destacado -->
+<section class="py-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-3xl overflow-hidden shadow-2xl">
+<div class="grid md:grid-cols-2 gap-8 items-center">
+<div class="p-8 md:p-12 text-white">
+<span class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-4">Evento Destacado</span>
+<h2 class="text-4xl md:text-5xl font-display font-bold mb-4">Conferencia de Liderazgo 2025</h2>
+<p class="text-blue-100 text-lg mb-6">"Líderes que Transforman: Impacto y Visión para el Futuro"</p>
+<div class="space-y-4 mb-8">
+<div class="flex items-center">
+<span class="material-icons-outlined mr-3 text-2xl">calendar_today</span>
+<span class="text-lg">15-17 de Marzo, 2025</span>
+</div>
+<div class="flex items-center">
+<span class="material-icons-outlined mr-3 text-2xl">location_on</span>
+<span class="text-lg">Centro de Convenciones Lima, Perú</span>
+</div>
+<div class="flex items-center">
+<span class="material-icons-outlined mr-3 text-2xl">person</span>
+<span class="text-lg">Conferencistas internacionales</span>
+</div>
+<div class="flex items-center">
+<span class="material-icons-outlined mr-3 text-2xl">groups</span>
+<span class="text-lg">Cupo limitado: 500 personas</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-xl font-bold hover:bg-blue-50 transition-all shadow-lg" href="#registro">
+Registrarme Ahora
+<span class="material-icons-outlined ml-2">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-all" href="#detalles">
+Más Información
+</a>
+</div>
+</div>
+<div class="bg-gradient-to-br from-blue-500 to-blue-700 p-12 flex items-center justify-center">
+<div class="text-center">
+<span class="material-icons-outlined text-white text-9xl mb-6">event</span>
+<div class="bg-white/20 backdrop-blur-sm rounded-2xl p-6">
+<div class="text-5xl font-display font-bold text-white mb-2">$75</div>
+<div class="text-blue-100">Preventa hasta 31 Ene</div>
+<div class="text-white text-sm mt-2">Precio regular: $120</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Próximos Eventos -->
+<section class="py-20 bg-gray-100 dark:bg-gray-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-4xl font-display font-bold text-center mb-12">Calendario de Eventos</h2>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Evento 1 -->
+<div class="bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+<div class="bg-gradient-to-br from-green-500 to-green-700 p-6 text-white">
+<div class="flex justify-between items-start mb-4">
+<div>
+<div class="text-4xl font-display font-bold">25</div>
+<div class="text-green-100">Enero</div>
+</div>
+<span class="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold">Online</span>
+</div>
+<h3 class="text-xl font-bold">Taller de Ministerios Creativos</h3>
+</div>
+<div class="p-6">
+<div class="space-y-3 mb-6">
+<div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+<span class="material-icons-outlined text-sm mr-2">schedule</span>
+7:00 PM - 9:00 PM
+</div>
+<div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+<span class="material-icons-outlined text-sm mr-2">videocam</span>
+Plataforma Zoom
+</div>
+</div>
+<p class="text-gray-600 dark:text-gray-400 text-sm mb-6">Aprende técnicas innovadoras para usar las artes en el ministerio.</p>
+<div class="flex gap-3">
+<a class="flex-1 bg-secondary hover:bg-green-600 text-white text-center px-4 py-2 rounded-lg font-semibold transition-all" href="#registro">Inscribirse</a>
+<a class="border-2 border-gray-300 dark:border-gray-600 hover:border-secondary text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg font-semibold transition-all" href="#">Ver más</a>
+</div>
+</div>
+</div>
+
+<!-- Evento 2 -->
+<div class="bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+<div class="bg-gradient-to-br from-purple-500 to-purple-700 p-6 text-white">
+<div class="flex justify-between items-start mb-4">
+<div>
+<div class="text-4xl font-display font-bold">8-9</div>
+<div class="text-purple-100">Febrero</div>
+</div>
+<span class="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold">Presencial</span>
+</div>
+<h3 class="text-xl font-bold">Retiro de Líderes</h3>
+</div>
+<div class="p-6">
+<div class="space-y-3 mb-6">
+<div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+<span class="material-icons-outlined text-sm mr-2">schedule</span>
+Todo el día
+</div>
+<div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+<span class="material-icons-outlined text-sm mr-2">location_on</span>
+Casa de Retiros Valle Verde
+</div>
+</div>
+<p class="text-gray-600 dark:text-gray-400 text-sm mb-6">Tiempo de renovación, capacitación y comunión para líderes.</p>
+<div class="flex gap-3">
+<a class="flex-1 bg-secondary hover:bg-green-600 text-white text-center px-4 py-2 rounded-lg font-semibold transition-all" href="#registro">Inscribirse</a>
+<a class="border-2 border-gray-300 dark:border-gray-600 hover:border-secondary text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg font-semibold transition-all" href="#">Ver más</a>
+</div>
+</div>
+</div>
+
+<!-- Evento 3 -->
+<div class="bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+<div class="bg-gradient-to-br from-red-500 to-red-700 p-6 text-white">
+<div class="flex justify-between items-start mb-4">
+<div>
+<div class="text-4xl font-display font-bold">15</div>
+<div class="text-red-100">Febrero</div>
+</div>
+<span class="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold">Híbrido</span>
+</div>
+<h3 class="text-xl font-bold">Webinar: Finanzas Saludables</h3>
+</div>
+<div class="p-6">
+<div class="space-y-3 mb-6">
+<div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+<span class="material-icons-outlined text-sm mr-2">schedule</span>
+6:00 PM - 8:00 PM
+</div>
+<div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+<span class="material-icons-outlined text-sm mr-2">computer</span>
+Online y Presencial
+</div>
+</div>
+<p class="text-gray-600 dark:text-gray-400 text-sm mb-6">Gestión financiera transparente para iglesias y organizaciones.</p>
+<div class="flex gap-3">
+<a class="flex-1 bg-secondary hover:bg-green-600 text-white text-center px-4 py-2 rounded-lg font-semibold transition-all" href="#registro">Inscribirse</a>
+<a class="border-2 border-gray-300 dark:border-gray-600 hover:border-secondary text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg font-semibold transition-all" href="#">Ver más</a>
+</div>
+</div>
+</div>
+
+<!-- Evento 4 -->
+<div class="bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+<div class="bg-gradient-to-br from-indigo-500 to-indigo-700 p-6 text-white">
+<div class="flex justify-between items-start mb-4">
+<div>
+<div class="text-4xl font-display font-bold">22</div>
+<div class="text-indigo-100">Febrero</div>
+</div>
+<span class="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold">Online</span>
+</div>
+<h3 class="text-xl font-bold">Capacitación en Mentoría</h3>
+</div>
+<div class="p-6">
+<div class="space-y-3 mb-6">
+<div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+<span class="material-icons-outlined text-sm mr-2">schedule</span>
+8:00 AM - 12:00 PM
+</div>
+<div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+<span class="material-icons-outlined text-sm mr-2">videocam</span>
+Plataforma Zoom
+</div>
+</div>
+<p class="text-gray-600 dark:text-gray-400 text-sm mb-6">Herramientas prácticas para ser un mentor efectivo.</p>
+<div class="flex gap-3">
+<a class="flex-1 bg-secondary hover:bg-green-600 text-white text-center px-4 py-2 rounded-lg font-semibold transition-all" href="#registro">Inscribirse</a>
+<a class="border-2 border-gray-300 dark:border-gray-600 hover:border-secondary text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg font-semibold transition-all" href="#">Ver más</a>
+</div>
+</div>
+</div>
+
+<!-- Evento 5 -->
+<div class="bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+<div class="bg-gradient-to-br from-teal-500 to-teal-700 p-6 text-white">
+<div class="flex justify-between items-start mb-4">
+<div>
+<div class="text-4xl font-display font-bold">1-2</div>
+<div class="text-teal-100">Marzo</div>
+</div>
+<span class="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold">Presencial</span>
+</div>
+<h3 class="text-xl font-bold">Cumbre de Plantadores</h3>
+</div>
+<div class="p-6">
+<div class="space-y-3 mb-6">
+<div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+<span class="material-icons-outlined text-sm mr-2">schedule</span>
+9:00 AM - 5:00 PM
+</div>
+<div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+<span class="material-icons-outlined text-sm mr-2">location_on</span>
+Hotel Grand Plaza, Lima
+</div>
+</div>
+<p class="text-gray-600 dark:text-gray-400 text-sm mb-6">Encuentro para plantadores de iglesias actuales y futuros.</p>
+<div class="flex gap-3">
+<a class="flex-1 bg-secondary hover:bg-green-600 text-white text-center px-4 py-2 rounded-lg font-semibold transition-all" href="#registro">Inscribirse</a>
+<a class="border-2 border-gray-300 dark:border-gray-600 hover:border-secondary text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg font-semibold transition-all" href="#">Ver más</a>
+</div>
+</div>
+</div>
+
+<!-- Evento 6 -->
+<div class="bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all">
+<div class="bg-gradient-to-br from-yellow-500 to-yellow-700 p-6 text-white">
+<div class="flex justify-between items-start mb-4">
+<div>
+<div class="text-4xl font-display font-bold">20</div>
+<div class="text-yellow-100">Marzo</div>
+</div>
+<span class="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold">Online</span>
+</div>
+<h3 class="text-xl font-bold">Taller de Comunicación Digital</h3>
+</div>
+<div class="p-6">
+<div class="space-y-3 mb-6">
+<div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+<span class="material-icons-outlined text-sm mr-2">schedule</span>
+3:00 PM - 6:00 PM
+</div>
+<div class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+<span class="material-icons-outlined text-sm mr-2">videocam</span>
+Google Meet
+</div>
+</div>
+<p class="text-gray-600 dark:text-gray-400 text-sm mb-6">Estrategias efectivas para redes sociales y marketing digital.</p>
+<div class="flex gap-3">
+<a class="flex-1 bg-secondary hover:bg-green-600 text-white text-center px-4 py-2 rounded-lg font-semibold transition-all" href="#registro">Inscribirse</a>
+<a class="border-2 border-gray-300 dark:border-gray-600 hover:border-secondary text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg font-semibold transition-all" href="#">Ver más</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Formulario de Registro -->
+<section class="py-20" id="registro">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-4xl font-display font-bold mb-4">Regístrate a un Evento</h2>
+<p class="text-xl text-gray-600 dark:text-gray-400">Completa el formulario para asegurar tu lugar</p>
+</div>
+<form class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl">
+<div class="grid md:grid-cols-2 gap-6 mb-6">
+<div>
+<label class="block text-sm font-semibold mb-2">Nombre completo *</label>
+<input class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:ring-2 focus:ring-secondary focus:outline-none" type="text" required/>
+</div>
+<div>
+<label class="block text-sm font-semibold mb-2">Correo electrónico *</label>
+<input class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:ring-2 focus:ring-secondary focus:outline-none" type="email" required/>
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-6 mb-6">
+<div>
+<label class="block text-sm font-semibold mb-2">Teléfono *</label>
+<input class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:ring-2 focus:ring-secondary focus:outline-none" type="tel" required/>
+</div>
+<div>
+<label class="block text-sm font-semibold mb-2">Ciudad</label>
+<input class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:ring-2 focus:ring-secondary focus:outline-none" type="text"/>
+</div>
+</div>
+<div class="mb-6">
+<label class="block text-sm font-semibold mb-2">Evento de interés *</label>
+<select class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:ring-2 focus:ring-secondary focus:outline-none" required>
+<option value="">Selecciona un evento</option>
+<option>Conferencia de Liderazgo 2025</option>
+<option>Taller de Ministerios Creativos</option>
+<option>Retiro de Líderes</option>
+<option>Webinar: Finanzas Saludables</option>
+<option>Capacitación en Mentoría</option>
+<option>Cumbre de Plantadores</option>
+<option>Taller de Comunicación Digital</option>
+</select>
+</div>
+<div class="mb-6">
+<label class="block text-sm font-semibold mb-2">¿Cómo te enteraste de este evento?</label>
+<select class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:ring-2 focus:ring-secondary focus:outline-none">
+<option value="">Selecciona una opción</option>
+<option>Redes sociales</option>
+<option>Email</option>
+<option>Amigo/Referencia</option>
+<option>Sitio web</option>
+<option>Otro</option>
+</select>
+</div>
+<div class="mb-6">
+<label class="block text-sm font-semibold mb-2">Comentarios adicionales</label>
+<textarea class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:ring-2 focus:ring-secondary focus:outline-none" rows="4"></textarea>
+</div>
+<div class="mb-6">
+<label class="flex items-start">
+<input class="mt-1 mr-3" type="checkbox" required/>
+<span class="text-sm text-gray-600 dark:text-gray-400">Acepto los términos y condiciones y autorizo el uso de mis datos para fines del evento</span>
+</label>
+</div>
+<button class="w-full bg-secondary hover:bg-green-600 text-white font-bold py-4 rounded-xl transition-all shadow-lg" type="submit">Completar Registro</button>
+</form>
+</div>
+</section>
+
+<!-- Galería de Eventos Pasados -->
+<section class="py-20 bg-gray-100 dark:bg-gray-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-4xl font-display font-bold text-center mb-4">Eventos Anteriores</h2>
+<p class="text-center text-gray-600 dark:text-gray-400 mb-12">Momentos memorables de nuestras conferencias y encuentros</p>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all aspect-square">
+<div class="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
+<span class="material-icons-outlined text-white text-8xl opacity-50">photo_library</span>
+</div>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+<div class="text-center text-white p-6">
+<h3 class="text-xl font-bold mb-2">Conferencia 2024</h3>
+<p class="text-sm">Ver galería completa</p>
+</div>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all aspect-square">
+<div class="absolute inset-0 bg-gradient-to-br from-green-600 to-green-800 flex items-center justify-center">
+<span class="material-icons-outlined text-white text-8xl opacity-50">photo_library</span>
+</div>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+<div class="text-center text-white p-6">
+<h3 class="text-xl font-bold mb-2">Retiro Líderes 2024</h3>
+<p class="text-sm">Ver galería completa</p>
+</div>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all aspect-square">
+<div class="absolute inset-0 bg-gradient-to-br from-purple-600 to-purple-800 flex items-center justify-center">
+<span class="material-icons-outlined text-white text-8xl opacity-50">photo_library</span>
+</div>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all flex items-center justify-center">
+<div class="text-center text-white p-6">
+<h3 class="text-xl font-bold mb-2">Cumbre Misional 2023</h3>
+<p class="text-sm">Ver galería completa</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-400 py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center">
+<div class="flex items-center justify-center space-x-2 mb-4">
+<span class="material-icons-outlined text-primary text-3xl">agriculture</span>
+<span class="font-display font-bold text-white text-xl">Igle<span class="text-primary">Desa</span>Rrollo</span>
+</div>
+<p class="text-sm mb-6">© 2024 Igledesarrollo. Todos los derechos reservados.</p>
+<div class="flex justify-center space-x-6">
+<a class="hover:text-primary transition-colors" href="index.html">Inicio</a>
+<a class="hover:text-primary transition-colors" href="nosotros.html">Nosotros</a>
+<a class="hover:text-primary transition-colors" href="programas.html">Programas</a>
+<a class="hover:text-primary transition-colors" href="servicios.html">Servicios</a>
+<a class="hover:text-primary transition-colors" href="recursos.html">Recursos</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
