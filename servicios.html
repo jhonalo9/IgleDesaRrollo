@@ -13,8 +13,9 @@ tailwind.config = {
   theme: {
     extend: {
       colors: {
-        primary: "#D4AF37",
+         primary: "#D4AF37",
         secondary: "#7FB069",
+        success: "#47BD39",
       },
       fontFamily: {
         display: ["Montserrat", "sans-serif"],
@@ -31,10 +32,14 @@ tailwind.config = {
 <header class="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-20">
-<a href="index.html" class="flex items-center space-x-3">
-<span class="material-icons-outlined text-primary text-4xl">agriculture</span>
-<span class="font-display font-bold text-xl">Igle<span class="text-primary">Desa</span>Rrollo</span>
-</a>
+<div class="flex items-center space-x-3">
+<!--<span class="material-icons-outlined text-primary text-4xl">agriculture</span>-->
+<img src="logo.png" alt="Logo" class="h-10 w-10 object-contain"/>
+<div class="flex flex-col leading-tight font-display font-bold text-lg tracking-tight text-gray-800 dark:text-white uppercase">
+<span class="text-primary">Igle<span class="text-success">DesaRrollo </span></span>
+
+</div>
+</div>
 <nav class="hidden md:flex items-center space-x-8">
 <a class="text-gray-600 dark:text-gray-300 hover:text-secondary font-semibold text-sm" href="index.html">Inicio</a>
 <a class="text-gray-600 dark:text-gray-300 hover:text-secondary font-semibold text-sm" href="nosotros.html">Nosotros</a>
@@ -51,330 +56,169 @@ tailwind.config = {
 </header>
 
 <!-- Hero -->
-<section class="relative bg-gradient-to-r from-purple-600 to-purple-800 py-20">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-<h1 class="text-5xl md:text-6xl font-display font-bold text-white mb-6">Servicios Personalizados</h1>
-<p class="text-xl text-purple-100 max-w-3xl mx-auto">Acompañamiento profesional para tu desarrollo ministerial, organizacional y personal</p>
-</div>
-</section>
+<section class="relative py-24 overflow-hidden flex items-center">
+  <div class="absolute inset-0 z-0">
+    <img 
+      src="servicioss.jpg"
+ 
+      alt="Servicios Igledesarrollo" 
+      class="w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-purple-900/80 mix-blend-multiply"></div>
+  </div>
 
-<!-- Intro -->
-<section class="py-16">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-<p class="text-xl text-gray-600 dark:text-gray-400 leading-relaxed">
-Nuestros servicios están diseñados para ofrecer <strong>soluciones personalizadas</strong> que respondan a tus necesidades específicas. Ya sea que lideres una organización, iglesia o estés en un proceso de desarrollo personal, tenemos la experiencia y las herramientas para ayudarte.
-</p>
-</div>
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class="text-5xl md:text-6xl font-display font-bold text-white mb-6">Servicios - Plan Piloto</h1>
+    <p class="text-xl text-purple-100 max-w-3xl mx-auto">Soluciones estratégicas para el crecimiento de iglesias y organizaciones</p>
+  </div>
 </section>
 
 <!-- Servicios Principales -->
 <section class="py-20">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-<!-- Asesoría -->
-<div class="mb-20">
-<div class="grid md:grid-cols-2 gap-12 items-center">
-<div>
-<div class="inline-block bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400 px-4 py-2 rounded-full text-sm font-semibold mb-4">Servicio Destacado</div>
-<h2 class="text-4xl font-display font-bold mb-6">Asesoría Estratégica</h2>
-<p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-6">
-Orientación experta para organizaciones, iglesias y líderes que buscan claridad, dirección y estrategias efectivas para alcanzar sus objetivos.
-</p>
-<div class="space-y-4">
-<div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md border-l-4 border-blue-500">
-<h4 class="font-bold mb-2 flex items-center">
-<span class="material-icons-outlined text-blue-500 mr-2">business</span>
-Asesoría Organizacional
-</h4>
-<p class="text-gray-600 dark:text-gray-400 text-sm">Planificación estratégica, estructuras organizacionales, gestión de cambio y desarrollo de liderazgo institucional.</p>
+<!-- Planes Estratégicos -->
+<div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border-t-4 border-blue-500">
+<div class="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mb-6">
+<span class="material-icons-outlined text-blue-600 text-3xl">business_center</span>
 </div>
-<div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md border-l-4 border-green-500">
-<span class="material-icons-outlined text-green-500 mr-2">church</span>
-Asesoría Eclesiástica
-</h4>
-<p class="text-gray-600 dark:text-gray-400 text-sm">Visión, crecimiento, desarrollo de ministerios, resolución de conflictos y transiciones pastorales.</p>
+<h3 class="text-2xl font-display font-bold mb-4">PLANES ESTRATÉGICOS</h3>
+<p class="text-gray-600 dark:text-gray-400 mb-6">Elaboración de planes para iglesias y organizaciones</p>
+<div class="space-y-3">
+<div class="flex items-start">
+<span class="material-icons-outlined text-blue-500 mr-2 mt-1">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-400">Análisis situacional</p>
 </div>
-<div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md border-l-4 border-purple-500">
-<h4 class="font-bold mb-2 flex items-center">
-<span class="material-icons-outlined text-purple-500 mr-2">trending_up</span>
-Asesoría de Proyectos
-</h4>
-<p class="text-gray-600 dark:text-gray-400 text-sm">Diseño, implementación y evaluación de proyectos sociales, misioneros y de desarrollo comunitario.</p>
+<div class="flex items-start">
+<span class="material-icons-outlined text-blue-500 mr-2 mt-1">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-400">Definición de objetivos</p>
+</div>
+<div class="flex items-start">
+<span class="material-icons-outlined text-blue-500 mr-2 mt-1">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-400">Rutas de implementación</p>
 </div>
 </div>
-</div>
-<div class="bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl p-8 md:p-12 text-white shadow-2xl">
-<span class="material-icons-outlined text-8xl mb-6 opacity-50">support_agent</span>
-<h3 class="text-2xl font-bold mb-4">¿Cómo funciona?</h3>
-<ul class="space-y-4 mb-8">
-<li class="flex items-start">
-<span class="material-icons-outlined mr-3 mt-1">looks_one</span>
-<div>
-<h5 class="font-semibold mb-1">Diagnóstico Inicial</h5>
-<p class="text-blue-100 text-sm">Evaluación de situación y necesidades</p>
-</div>
-</li>
-<li class="flex items-start">
-<span class="material-icons-outlined mr-3 mt-1">looks_two</span>
-<div>
-<h5 class="font-semibold mb-1">Propuesta Personalizada</h5>
-<p class="text-blue-100 text-sm">Plan de acción específico</p>
-</div>
-</li>
-<li class="flex items-start">
-<span class="material-icons-outlined mr-3 mt-1">looks_3</span>
-<div>
-<h5 class="font-semibold mb-1">Implementación</h5>
-<p class="text-blue-100 text-sm">Acompañamiento continuo</p>
-</div>
-</li>
-<li class="flex items-start">
-<span class="material-icons-outlined mr-3 mt-1">looks_4</span>
-<div>
-<h5 class="font-semibold mb-1">Evaluación</h5>
-<p class="text-blue-100 text-sm">Medición de resultados</p>
-</div>
-</li>
-</ul>
-<a class="inline-block w-full bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all text-center" href="#contacto">Solicitar Asesoría</a>
-</div>
+<div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+<p class="text-sm font-semibold text-blue-600 dark:text-blue-400">Incluye:</p>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Materiales y capacitación</p>
 </div>
 </div>
 
-<!-- Mentoría -->
-<div class="mb-20">
-<div class="grid md:grid-cols-2 gap-12 items-center">
-<div class="order-2 md:order-1">
-<div class="bg-gradient-to-br from-green-500 to-green-700 rounded-2xl p-8 md:p-12 text-white shadow-2xl">
-<span class="material-icons-outlined text-8xl mb-6 opacity-50">psychology</span>
-<h3 class="text-2xl font-bold mb-4">Modalidades de Mentoría</h3>
-<div class="space-y-4">
-<div class="bg-white/20 backdrop-blur-sm rounded-xl p-4">
-<h5 class="font-bold mb-2 flex items-center">
-<span class="material-icons-outlined mr-2">person</span>
-Individual
-</h5>
-<p class="text-green-100 text-sm">Sesiones personalizadas uno a uno</p>
+<!-- Marketing Digital -->
+<div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border-t-4 border-green-500">
+<div class="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mb-6">
+<span class="material-icons-outlined text-green-600 text-3xl">campaign</span>
 </div>
-<div class="bg-white/20 backdrop-blur-sm rounded-xl p-4">
-<h5 class="font-bold mb-2 flex items-center">
-<span class="material-icons-outlined mr-2">groups</span>
-Grupal
-</h5>
-<p class="text-green-100 text-sm">Aprendizaje colaborativo en grupo</p>
-</div>
-<div class="bg-white/20 backdrop-blur-sm rounded-xl p-4">
-<h5 class="font-bold mb-2 flex items-center">
-<span class="material-icons-outlined mr-2">videocam</span>
-Virtual/Presencial
-</h5>
-<p class="text-green-100 text-sm">Flexible según tus necesidades</p>
-</div>
-</div>
-<div class="mt-8 p-6 bg-white/10 backdrop-blur-sm rounded-xl">
-<div class="text-3xl font-bold mb-2">6-12 meses</div>
-<div class="text-green-100">Duración típica del proceso</div>
-</div>
-</div>
-</div>
-<div class="order-1 md:order-2">
-<h2 class="text-4xl font-display font-bold mb-6">Mentoría Integral</h2>
-<p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-6">
-Relaciones de mentoría diseñadas para tu crecimiento personal, espiritual y profesional. Te acompañamos en tu camino de desarrollo con experiencia y empatía.
-</p>
-<div class="space-y-4">
+<h3 class="text-2xl font-display font-bold mb-4">MARKETING DIGITAL</h3>
+<p class="text-gray-600 dark:text-gray-400 mb-6">Estrategias efectivas para comunicar y alcanzar tu audiencia</p>
+<div class="space-y-3">
 <div class="flex items-start">
-<div class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-<span class="material-icons-outlined text-green-600 dark:text-green-400">star</span>
-</div>
-<div>
-<h4 class="font-bold mb-2">Mentoría de Liderazgo</h4>
-<p class="text-gray-600 dark:text-gray-400 text-sm">Desarrollo de habilidades, carácter y efectividad como líder en tu contexto ministerial u organizacional.</p>
-</div>
+<span class="material-icons-outlined text-green-500 mr-2 mt-1">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-400">Estrategias de contenido</p>
 </div>
 <div class="flex items-start">
-<div class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-<span class="material-icons-outlined text-green-600 dark:text-green-400">favorite</span>
-</div>
-<div>
-<h4 class="font-bold mb-2">Mentoría Espiritual</h4>
-<p class="text-gray-600 dark:text-gray-400 text-sm">Acompañamiento en tu crecimiento espiritual, discernimiento vocacional y formación del carácter cristiano.</p>
-</div>
+<span class="material-icons-outlined text-green-500 mr-2 mt-1">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-400">Gestión de redes sociales</p>
 </div>
 <div class="flex items-start">
-<div class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-<span class="material-icons-outlined text-green-600 dark:text-green-400">work</span>
-</div>
-<div>
-<h4 class="font-bold mb-2">Mentoría Vocacional</h4>
-<p class="text-gray-600 dark:text-gray-400 text-sm">Orientación para descubrir, desarrollar y cumplir tu llamado y propósito de vida.</p>
+<span class="material-icons-outlined text-green-500 mr-2 mt-1">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-400">Segmentación de audiencia</p>
 </div>
 </div>
-</div>
-<a class="inline-block mt-6 bg-secondary hover:bg-green-600 text-white px-8 py-3 rounded-lg font-semibold transition-all" href="#contacto">Encontrar un Mentor</a>
-</div>
+<div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+<p class="text-sm font-semibold text-green-600 dark:text-green-400">Incluye:</p>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Herramientas de marketing</p>
 </div>
 </div>
 
-<!-- Consultoría -->
-<div>
-<h2 class="text-4xl font-display font-bold mb-6 text-center">Consultoría Especializada</h2>
-<p class="text-center text-gray-600 dark:text-gray-400 text-lg max-w-3xl mx-auto mb-12">
-Servicios de consultoría en áreas específicas para optimizar tu organización o ministerio
-</p>
-<div class="grid md:grid-cols-3 gap-8">
+<!-- Plantación de Iglesias -->
+<div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border-t-4 border-purple-500">
+<div class="w-16 h-16 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mb-6">
+<span class="material-icons-outlined text-purple-600 text-3xl">church</span>
+</div>
+<h3 class="text-2xl font-display font-bold mb-4">PLANTACIÓN DE IGLESIAS</h3>
+<p class="text-gray-600 dark:text-gray-400 mb-6">Talleres sobre el proceso de plantar una nueva iglesia</p>
+<div class="space-y-3">
+<div class="flex items-start">
+<span class="material-icons-outlined text-purple-500 mr-2 mt-1">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-400">Evaluación de viabilidad</p>
+</div>
+<div class="flex items-start">
+<span class="material-icons-outlined text-purple-500 mr-2 mt-1">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-400">Desarrollo del núcleo inicial</p>
+</div>
+<div class="flex items-start">
+<span class="material-icons-outlined text-purple-500 mr-2 mt-1">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-400">Estrategias de crecimiento</p>
+</div>
+</div>
+<div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+<p class="text-sm font-semibold text-purple-600 dark:text-purple-400">Incluye:</p>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Materiales y asesoría</p>
+</div>
+</div>
+
+<!-- Tecnología -->
 <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border-t-4 border-orange-500">
 <div class="w-16 h-16 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center mb-6">
-<span class="material-icons-outlined text-orange-600 text-3xl">campaign</span>
+<span class="material-icons-outlined text-orange-600 text-3xl">computer</span>
 </div>
-<h3 class="text-xl font-bold mb-4">Comunicación y Marketing</h3>
-<p class="text-gray-600 dark:text-gray-400 mb-4">Estrategias efectivas para comunicar tu mensaje y alcanzar tu audiencia.</p>
-<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-orange-500 mr-2">check</span>Branding institucional</li>
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-orange-500 mr-2">check</span>Redes sociales</li>
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-orange-500 mr-2">check</span>Marketing digital</li>
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-orange-500 mr-2">check</span>Contenido visual</li>
-</ul>
+<h3 class="text-2xl font-display font-bold mb-4">TECNOLOGÍA</h3>
+<p class="text-gray-600 dark:text-gray-400 mb-6">Implementación de herramientas tecnológicas para mayor eficiencia</p>
+<div class="space-y-3">
+<div class="flex items-start">
+<span class="material-icons-outlined text-orange-500 mr-2 mt-1">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-400">Sistemas de gestión</p>
 </div>
-
-<div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border-t-4 border-red-500">
-<div class="w-16 h-16 bg-red-100 dark:bg-red-900 rounded-full flex items-center justify-center mb-6">
-<span class="material-icons-outlined text-red-600 text-3xl">account_balance</span>
+<div class="flex items-start">
+<span class="material-icons-outlined text-orange-500 mr-2 mt-1">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-400">Desarrollo web</p>
 </div>
-<h3 class="text-xl font-bold mb-4">Gestión Financiera</h3>
-<p class="text-gray-600 dark:text-gray-400 mb-4">Administración saludable y transparente de recursos económicos.</p>
-<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-red-500 mr-2">check</span>Presupuestos</li>
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-red-500 mr-2">check</span>Recaudación de fondos</li>
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-red-500 mr-2">check</span>Controles internos</li>
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-red-500 mr-2">check</span>Transparencia fiscal</li>
-</ul>
+<div class="flex items-start">
+<span class="material-icons-outlined text-orange-500 mr-2 mt-1">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-400">Apps móviles</p>
 </div>
-
-<div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border-t-4 border-indigo-500">
-<div class="w-16 h-16 bg-indigo-100 dark:bg-indigo-900 rounded-full flex items-center justify-center mb-6">
-<span class="material-icons-outlined text-indigo-600 text-3xl">computer</span>
+<div class="flex items-start">
+<span class="material-icons-outlined text-orange-500 mr-2 mt-1">check_circle</span>
+<p class="text-sm text-gray-600 dark:text-gray-400">Bases de datos</p>
 </div>
-<h3 class="text-xl font-bold mb-4">Tecnología</h3>
-<p class="text-gray-600 dark:text-gray-400 mb-4">Implementación de herramientas tecnológicas para mayor eficiencia.</p>
-<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-indigo-500 mr-2">check</span>Sistemas de gestión</li>
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-indigo-500 mr-2">check</span>Páginas web</li>
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-indigo-500 mr-2">check</span>Apps móviles</li>
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-indigo-500 mr-2">check</span>Bases de datos</li>
-</ul>
 </div>
-
-<div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border-t-4 border-teal-500">
-<div class="w-16 h-16 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center mb-6">
-<span class="material-icons-outlined text-teal-600 text-3xl">groups</span>
-</div>
-<h3 class="text-xl font-bold mb-4">Desarrollo de Equipos</h3>
-<p class="text-gray-600 dark:text-gray-400 mb-4">Fortalecimiento de la cultura y efectividad de tus equipos de trabajo.</p>
-<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-teal-500 mr-2">check</span>Team building</li>
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-teal-500 mr-2">check</span>Capacitación</li>
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-teal-500 mr-2">check</span>Resolución conflictos</li>
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-teal-500 mr-2">check</span>Cultura organizacional</li>
-</ul>
-</div>
-
-<div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border-t-4 border-pink-500">
-<div class="w-16 h-16 bg-pink-100 dark:bg-pink-900 rounded-full flex items-center justify-center mb-6">
-<span class="material-icons-outlined text-pink-600 text-3xl">event</span>
-</div>
-<h3 class="text-xl font-bold mb-4">Eventos Especiales</h3>
-<p class="text-gray-600 dark:text-gray-400 mb-4">Planificación y ejecución de conferencias, retiros y eventos ministeriales.</p>
-<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-pink-500 mr-2">check</span>Logística integral</li>
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-pink-500 mr-2">check</span>Programa y contenido</li>
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-pink-500 mr-2">check</span>Producción audiovisual</li>
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-pink-500 mr-2">check</span>Evaluación post-evento</li>
-</ul>
-</div>
-
-<div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border-t-4 border-yellow-500">
-<div class="w-16 h-16 bg-yellow-100 dark:bg-yellow-900 rounded-full flex items-center justify-center mb-6">
-<span class="material-icons-outlined text-yellow-600 text-3xl">gavel</span>
-</div>
-<h3 class="text-xl font-bold mb-4">Legal y Gobernanza</h3>
-<p class="text-gray-600 dark:text-gray-400 mb-4">Estructuras legales y sistemas de gobernanza saludables.</p>
-<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-yellow-600 mr-2">check</span>Constitución legal</li>
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-yellow-600 mr-2">check</span>Juntas directivas</li>
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-yellow-600 mr-2">check</span>Políticas internas</li>
-<li class="flex items-center"><span class="material-icons-outlined text-xs text-yellow-600 mr-2">check</span>Compliance</li>
-</ul>
-</div>
+<div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+<p class="text-sm font-semibold text-orange-600 dark:text-orange-400">Sistemas:</p>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Web, Apps, Base de datos</p>
 </div>
 </div>
 
+</div>
 </div>
 </section>
 
-<!-- Testimonios -->
+<!-- Proceso de Trabajo -->
 <section class="bg-gray-100 dark:bg-gray-800 py-20">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<h2 class="text-4xl font-display font-bold text-center mb-12">Lo que Dicen Nuestros Clientes</h2>
-<div class="grid md:grid-cols-3 gap-8">
-<div class="bg-white dark:bg-gray-700 rounded-2xl p-8 shadow-lg">
-<div class="flex items-center mb-4">
-<div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mr-4">
-<span class="material-icons-outlined text-white">person</span>
+<h2 class="text-4xl font-display font-bold text-center mb-4">Nuestro Proceso</h2>
+<p class="text-center text-gray-600 dark:text-gray-400 text-lg max-w-3xl mx-auto mb-12">Trabajamos de manera estructurada para garantizar resultados efectivos</p>
+<div class="grid md:grid-cols-4 gap-8">
+<div class="text-center">
+<div class="w-20 h-20 bg-blue-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
+<h3 class="text-xl font-bold mb-2">Diagnóstico</h3>
+<p class="text-gray-600 dark:text-gray-400">Evaluamos tus necesidades y contexto actual</p>
 </div>
-<div>
-<h4 class="font-bold">Pastor Luis Gómez</h4>
-<p class="text-sm text-gray-600 dark:text-gray-400">Iglesia Central</p>
+<div class="text-center">
+<div class="w-20 h-20 bg-green-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
+<h3 class="text-xl font-bold mb-2">Propuesta</h3>
+<p class="text-gray-600 dark:text-gray-400">Desarrollamos un plan personalizado</p>
 </div>
+<div class="text-center">
+<div class="w-20 h-20 bg-purple-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
+<h3 class="text-xl font-bold mb-2">Implementación</h3>
+<p class="text-gray-600 dark:text-gray-400">Aplicamos estrategias con acompañamiento</p>
 </div>
-<p class="text-gray-600 dark:text-gray-400 italic">"La asesoría que recibimos fue transformadora para nuestra iglesia. Nos ayudaron a clarificar nuestra visión y desarrollar estrategias efectivas."</p>
-<div class="flex text-primary mt-4">
-<span class="material-icons">star</span>
-<span class="material-icons">star</span>
-<span class="material-icons">star</span>
-<span class="material-icons">star</span>
-<span class="material-icons">star</span>
-</div>
-</div>
-
-<div class="bg-white dark:bg-gray-700 rounded-2xl p-8 shadow-lg">
-<div class="flex items-center mb-4">
-<div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mr-4">
-<span class="material-icons-outlined text-white">person</span>
-</div>
-<div>
-<h4 class="font-bold">Diana Torres</h4>
-<p class="text-sm text-gray-600 dark:text-gray-400">Directora ONG</p>
-</div>
-</div>
-<p class="text-gray-600 dark:text-gray-400 italic">"La consultoría en gestión financiera nos permitió implementar controles que trajeron transparencia y confianza a nuestra organización."</p>
-<div class="flex text-primary mt-4">
-<span class="material-icons">star</span>
-<span class="material-icons">star</span>
-<span class="material-icons">star</span>
-<span class="material-icons">star</span>
-<span class="material-icons">star</span>
-</div>
-</div>
-
-<div class="bg-white dark:bg-gray-700 rounded-2xl p-8 shadow-lg">
-<div class="flex items-center mb-4">
-<div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mr-4">
-<span class="material-icons-outlined text-white">person</span>
-</div>
-<div>
-<h4 class="font-bold">Marcos Silva</h4>
-<p class="text-sm text-gray-600 dark:text-gray-400">Líder Joven</p>
-</div>
-</div>
-<p class="text-gray-600 dark:text-gray-400 italic">"Mi mentor me ha acompañado en momentos cruciales de decisión. Su experiencia y sabiduría han sido invaluables para mi crecimiento."</p>
-<div class="flex text-primary mt-4">
-<span class="material-icons">star</span>
-<span class="material-icons">star</span>
-<span class="material-icons">star</span>
-<span class="material-icons">star</span>
-<span class="material-icons">star</span>
-</div>
+<div class="text-center">
+<div class="w-20 h-20 bg-orange-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
+<h3 class="text-xl font-bold mb-2">Seguimiento</h3>
+<p class="text-gray-600 dark:text-gray-400">Evaluamos resultados y ajustamos si es necesario</p>
 </div>
 </div>
 </div>
@@ -385,7 +229,7 @@ Servicios de consultoría en áreas específicas para optimizar tu organización
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="text-center mb-12">
 <h2 class="text-4xl font-display font-bold mb-4">Solicita Nuestros Servicios</h2>
-<p class="text-xl text-gray-600 dark:text-gray-400">Cuéntanos sobre tu situación y te contactaremos pronto</p>
+<p class="text-xl text-gray-600 dark:text-gray-400">Cuéntanos sobre tus necesidades y te contactaremos pronto</p>
 </div>
 <form class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl">
 <div class="grid md:grid-cols-2 gap-6 mb-6">
@@ -407,10 +251,56 @@ Servicios de consultoría en áreas específicas para optimizar tu organización
 <label class="block text-sm font-semibold mb-2">Servicio de interés</label>
 <select class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:ring-2 focus:ring-secondary focus:outline-none" required>
 <option value="">Selecciona un servicio</option>
-<option>Asesoría Organizacional</option>
-<option>Asesoría Eclesiástica</option>
-<option>Mentoría de Liderazgo</option>
-<option>Mentoría Espiritual</option>
-<option>Consultoría - Comunicación</option>
-<option>Consultoría - Finanzas</option>
-<option>
+<option>Planes Estratégicos</option>
+<option>Marketing Digital</option>
+<option>Plantación de Iglesias</option>
+<option>Tecnología</option>
+<option>Varios servicios</option>
+</select>
+</div>
+</div>
+<div class="mb-6">
+<label class="block text-sm font-semibold mb-2">Mensaje</label>
+<textarea class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:ring-2 focus:ring-secondary focus:outline-none h-32" placeholder="Describe brevemente tus necesidades..."></textarea>
+</div>
+<div class="text-center">
+<button class="bg-secondary hover:bg-green-600 text-white px-10 py-4 rounded-lg font-semibold text-lg transition-all" type="submit">Solicitar Información</button>
+</div>
+</form>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-3 gap-8">
+<div>
+<h3 class="text-2xl font-display font-bold mb-4">Igle<span class="text-primary">Desa</span>Rrollo</h3>
+<p class="text-gray-300">Desarrollando líderes, transformando comunidades.</p>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Contacto</h4>
+<p class="text-gray-300 mb-2">info@igledesarrollo.org</p>
+<p class="text-gray-300">+1 (555) 123-4567</p>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Enlaces rápidos</h4>
+<a class="block text-gray-300 hover:text-primary mb-2" href="servicios.html">Servicios</a>
+<a class="block text-gray-300 hover:text-primary mb-2" href="programas.html">Programas</a>
+<a class="block text-gray-300 hover:text-primary" href="donar.html">Donar</a>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+<p>© 2024 IgleDesaRrollo. Todos los derechos reservados.</p>
+</div>
+</div>
+</footer>
+
+<script>
+// Mobile menu toggle
+document.getElementById('menuBtn').addEventListener('click', function() {
+  alert('Menú móvil - En una implementación real aquí se desplegaría el menú');
+});
+</script>
+</body>
+</html>

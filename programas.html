@@ -13,8 +13,9 @@ tailwind.config = {
   theme: {
     extend: {
       colors: {
-        primary: "#D4AF37",
+         primary: "#D4AF37",
         secondary: "#7FB069",
+        success: "#47BD39",
       },
       fontFamily: {
         display: ["Montserrat", "sans-serif"],
@@ -31,10 +32,14 @@ tailwind.config = {
 <header class="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-20">
-<a href="index.html" class="flex items-center space-x-3">
-<span class="material-icons-outlined text-primary text-4xl">agriculture</span>
-<span class="font-display font-bold text-xl">Igle<span class="text-primary">Desa</span>Rrollo</span>
-</a>
+<div class="flex items-center space-x-3">
+<!--<span class="material-icons-outlined text-primary text-4xl">agriculture</span>-->
+<img src="logo.png" alt="Logo" class="h-10 w-10 object-contain"/>
+<div class="flex flex-col leading-tight font-display font-bold text-lg tracking-tight text-gray-800 dark:text-white uppercase">
+<span class="text-primary">Igle<span class="text-success">DesaRrollo </span></span>
+
+</div>
+</div>
 <nav class="hidden md:flex items-center space-x-8">
 <a class="text-gray-600 dark:text-gray-300 hover:text-secondary font-semibold text-sm" href="index.html">Inicio</a>
 <a class="text-gray-600 dark:text-gray-300 hover:text-secondary font-semibold text-sm" href="nosotros.html">Nosotros</a>
