@@ -41,7 +41,7 @@ tailwind.config = {
 <a class="text-secondary dark:text-primary font-semibold text-sm border-b-2 border-secondary" href="programas.html">Programas</a>
 <a class="text-gray-600 dark:text-gray-300 hover:text-secondary font-semibold text-sm" href="servicios.html">Servicios</a>
 <a class="text-gray-600 dark:text-gray-300 hover:text-secondary font-semibold text-sm" href="recursos.html">Recursos</a>
-<a class="bg-secondary hover:bg-green-600 text-white px-5 py-2 rounded-lg transition-all font-semibold text-sm" href="eventos.html">Eventos</a>
+<a class="bg-secondary hover:bg-green-600 text-white px-5 py-2 rounded-lg transition-all font-semibold text-sm" href="donar.html">Donar</a>
 </nav>
 <button class="md:hidden text-gray-600 dark:text-gray-300" id="menuBtn">
 <span class="material-icons-outlined text-3xl">menu</span>
@@ -51,11 +51,21 @@ tailwind.config = {
 </header>
 
 <!-- Hero -->
-<section class="relative bg-gradient-to-r from-green-600 to-green-800 py-20">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-<h1 class="text-5xl md:text-6xl font-display font-bold text-white mb-6">Nuestros Programas</h1>
-<p class="text-xl text-green-100 max-w-3xl mx-auto">Formación integral diseñada para transformar vidas, equipar líderes y fortalecer comunidades</p>
-</div>
+<section class="relative py-24 overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <img 
+      src="fondo-programas.png"
+ 
+      alt="Programas Igledesarrollo" 
+      class="w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-green-900/75 mix-blend-multiply"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class="text-5xl md:text-6xl font-display font-bold text-white mb-6">Nuestros Programas</h1>
+    <p class="text-xl text-green-100 max-w-3xl mx-auto">Formación integral diseñada para transformar vidas, equipar líderes y fortalecer comunidades</p>
+  </div>
 </section>
 
 <!-- Programas -->
@@ -69,7 +79,7 @@ tailwind.config = {
 <div class="inline-block bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400 px-4 py-2 rounded-full text-sm font-semibold mb-4">Programa Destacado</div>
 <h2 class="text-4xl font-display font-bold mb-6">Centro de Ministerio Laico</h2>
 <p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-6">
-Un programa integral de capacitación para líderes laicos que desean servir con excelencia en sus comunidades de fe. Desarrollamos competencias espirituales, teológicas y prácticas.
+Un programa de capacitación integral para líderes laicos que desean servir con excelencia en sus iglesias. Desarrollamos competencias espirituales, bíblicas-teológicas y prácticas.
 </p>
 <div class="space-y-4 mb-8">
 <div class="flex items-start">
@@ -83,7 +93,7 @@ Un programa integral de capacitación para líderes laicos que desean servir con
 <span class="material-icons-outlined text-secondary mr-3 mt-1">check_circle</span>
 <div>
 <h4 class="font-semibold mb-1">Desarrollo de Habilidades Ministeriales</h4>
-<p class="text-gray-600 dark:text-gray-400 text-sm">Predicación, enseñanza, liderazgo y consejería pastoral</p>
+<p class="text-gray-600 dark:text-gray-400 text-sm">Predicación, enseñanza, liderazgo y consejería bíblica</p>
 </div>
 </div>
 <div class="flex items-start">
@@ -97,11 +107,11 @@ Un programa integral de capacitación para líderes laicos que desean servir con
 <div class="bg-gray-100 dark:bg-gray-800 rounded-xl p-6">
 <div class="grid grid-cols-2 gap-4 text-center">
 <div>
-<div class="text-3xl font-bold text-secondary mb-1">2 años</div>
+<div class="text-3xl font-bold text-secondary mb-1">1 año</div>
 <div class="text-sm text-gray-600 dark:text-gray-400">Duración</div>
 </div>
 <div>
-<div class="text-3xl font-bold text-secondary mb-1">150+</div>
+<div class="text-3xl font-bold text-secondary mb-1">70+</div>
 <div class="text-sm text-gray-600 dark:text-gray-400">Graduados</div>
 </div>
 </div>
@@ -110,7 +120,7 @@ Un programa integral de capacitación para líderes laicos que desean servir con
 <div class="bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl p-12 text-white shadow-2xl">
 <span class="material-icons-outlined text-8xl mb-4 opacity-50">school</span>
 <h3 class="text-2xl font-display font-bold mb-4">Próxima Convocatoria</h3>
-<p class="mb-6 text-blue-100">Inscripciones abiertas para el ciclo 2025</p>
+<p class="mb-6 text-blue-100">Inscripciones abiertas para el ciclo 2026</p>
 <a class="inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all" href="#inscripcion">Inscribirme Ahora</a>
 </div>
 </div>
@@ -177,22 +187,29 @@ Acompañamiento integral para líderes llamados a plantar nuevas comunidades de 
 <div class="flex items-center bg-white/10 rounded-lg p-4">
 <span class="material-icons-outlined text-4xl mr-4">map</span>
 <div>
-<h4 class="font-semibold">Fase 1: Visión y Estrategia</h4>
-<p class="text-sm text-green-100">Planificación y preparación</p>
+<h4 class="font-semibold">Fase 1: Visión y planificación</h4>
+<p class="text-sm text-green-100">Vision y planificación estratégica para la marcha del proyecto</p>
 </div>
 </div>
 <div class="flex items-center bg-white/10 rounded-lg p-4">
 <span class="material-icons-outlined text-4xl mr-4">groups</span>
 <div>
-<h4 class="font-semibold">Fase 2: Lanzamiento</h4>
-<p class="text-sm text-green-100">Inicio y primeros pasos</p>
+<h4 class="font-semibold">Fase 2: Preparación y entrenamiento</h4>
+<p class="text-sm text-green-100">Preparación el entrenamiento de líderes para los retos y desafíos.</p>
 </div>
 </div>
 <div class="flex items-center bg-white/10 rounded-lg p-4">
 <span class="material-icons-outlined text-4xl mr-4">trending_up</span>
 <div>
-<h4 class="font-semibold">Fase 3: Consolidación</h4>
-<p class="text-sm text-green-100">Crecimiento sostenible</p>
+<h4 class="font-semibold">Fase 3: Proceso de implementación</h4>
+<p class="text-sm text-green-100">Ejecución de las acciones planificadas para la formación de la nueva iglesia.</p>
+</div>
+</div>
+<div class="flex items-center bg-white/10 rounded-lg p-4">
+<span class="material-icons-outlined text-4xl mr-4">trending_up</span>
+<div>
+<h4 class="font-semibold">Fase 4: Organización eclesiástica</h4>
+<p class="text-sm text-green-100">Estructura y formalización de roles de la nueva iglesia.</p>
 </div>
 </div>
 </div>
@@ -207,7 +224,7 @@ Acompañamiento integral para líderes llamados a plantar nuevas comunidades de 
 <li class="flex items-start"><span class="material-icons-outlined mr-2 mt-1">check_circle</span><span>Seguimiento post-lanzamiento</span></li>
 </ul>
 <div class="mt-8 pt-8 border-t border-white/20">
-<div class="text-4xl font-bold mb-2">50+</div>
+<div class="text-4xl font-bold mb-2">5+</div>
 <div class="text-green-100">Iglesias plantadas exitosamente</div>
 </div>
 </div>
@@ -362,7 +379,7 @@ Iniciativas de transformación comunitaria que integran el desarrollo espiritual
 <span class="material-icons-outlined text-primary text-3xl">agriculture</span>
 <span class="font-display font-bold text-white text-xl">Igle<span class="text-primary">Desa</span>Rrollo</span>
 </div>
-<p class="text-sm mb-6">© 2024 Igledesarrollo. Todos los derechos reservados.</p>
+<p class="text-sm mb-6">© 2026 Igledesarrollo. Todos los derechos reservados.</p>
 <div class="flex justify-center space-x-6">
 <a class="hover:text-primary transition-colors" href="index.html">Inicio</a>
 <a class="hover:text-primary transition-colors" href="nosotros.html">Nosotros</a>

@@ -15,6 +15,7 @@ tailwind.config = {
       colors: {
         primary: "#D4AF37",
         secondary: "#7FB069",
+        success: "#47BD39",
       },
       fontFamily: {
         display: ["Montserrat", "sans-serif"],
@@ -31,9 +32,9 @@ tailwind.config = {
 <header class="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-20">
-<a href="index.html" class="flex items-center space-x-3">
-<span class="material-icons-outlined text-primary text-4xl">agriculture</span>
-<span class="font-display font-bold text-xl">Igle<span class="text-primary">Desa</span>Rrollo</span>
+<a href="index.html" class="flex items-center">
+<img src="logo.png" alt="Logo" class="h-10 w-10 object-contain"/>
+<span class="font-display font-bold text-xl text-primary uppercase">Igle<span class="text-success">DesaRrollo</span>
 </a>
 <nav class="hidden md:flex items-center space-x-8">
 <a class="text-gray-600 dark:text-gray-300 hover:text-secondary font-semibold text-sm" href="index.html">Inicio</a>
@@ -41,7 +42,7 @@ tailwind.config = {
 <a class="text-gray-600 dark:text-gray-300 hover:text-secondary font-semibold text-sm" href="programas.html">Programas</a>
 <a class="text-gray-600 dark:text-gray-300 hover:text-secondary font-semibold text-sm" href="servicios.html">Servicios</a>
 <a class="text-gray-600 dark:text-gray-300 hover:text-secondary font-semibold text-sm" href="recursos.html">Recursos</a>
-<a class="bg-secondary hover:bg-green-600 text-white px-5 py-2 rounded-lg transition-all font-semibold text-sm" href="eventos.html">Eventos</a>
+<a class="bg-secondary hover:bg-green-600 text-white px-5 py-2 rounded-lg transition-all font-semibold text-sm" href="donar.html">Donar</a>
 </nav>
 <button class="md:hidden text-gray-600 dark:text-gray-300" id="menuBtn">
 <span class="material-icons-outlined text-3xl">menu</span>
@@ -51,11 +52,20 @@ tailwind.config = {
 </header>
 
 <!-- Hero -->
-<section class="relative bg-gradient-to-r from-blue-600 to-blue-800 py-20">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-<h1 class="text-5xl md:text-6xl font-display font-bold text-white mb-6">Conoce Nuestra Historia</h1>
-<p class="text-xl text-blue-100 max-w-3xl mx-auto">Más de 15 años transformando vidas y fortaleciendo comunidades a través del desarrollo integral</p>
-</div>
+<section class="relative py-24 overflow-hidden md:h-[300px] flex items-center">
+  <div class="absolute inset-0 z-0">
+    <img 
+      src="fondo-nosotros.png" 
+      alt="Fondo Nosotros Igledesarrollo" 
+      class="w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-blue-900/80 mix-blend-multiply"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class="text-5xl md:text-6xl font-display font-bold text-white mb-6">Conoce Nuestra Historia</h1>
+    <p class="text-xl text-blue-100 max-w-3xl mx-auto font-light">Transformando vidas y fortaleciendo comunidades a través del desarrollo integral</p>
+  </div>
 </section>
 
 <!-- Misión, Visión y Valores -->
@@ -67,7 +77,7 @@ tailwind.config = {
 <span class="material-icons-outlined text-blue-600 text-3xl">visibility</span>
 </div>
 <h3 class="text-2xl font-display font-bold mb-4">Nuestra Visión</h3>
-<p class="text-gray-600 dark:text-gray-400 leading-relaxed">Ser una organización reconocida internacionalmente por su excelencia en el desarrollo integral de líderes y comunidades, inspirando transformación sostenible en América Latina y el mundo.</p>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed">Ser un ministerio reconocido nacional e internacionalmente por su excelencia en el desarrollo integral de iglesias y comunidades, inspirando transformación sostenible en América Latina y el mundo.</p>
 </div>
 
 <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border-t-4 border-secondary">
@@ -75,22 +85,45 @@ tailwind.config = {
 <span class="material-icons-outlined text-secondary text-3xl">flag</span>
 </div>
 <h3 class="text-2xl font-display font-bold mb-4">Nuestra Misión</h3>
-<p class="text-gray-600 dark:text-gray-400 leading-relaxed">Capacitar, equipar y acompañar a líderes y comunidades en su desarrollo espiritual, social y profesional, promoviendo valores de servicio, integridad y excelencia en todas nuestras actividades.</p>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed">Capacitar, equipar y acompañar a iglesias y comunidades en su desarrollo espiritual, social y profesional, promoviendo valores de servicio, integridad y excelencia en todas nuestras actividades.</p>
 </div>
 
 <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border-t-4 border-primary">
-<div class="w-16 h-16 bg-yellow-100 dark:bg-yellow-900 rounded-full flex items-center justify-center mb-6">
-<span class="material-icons-outlined text-primary text-3xl">star</span>
+  <div class="w-16 h-16 bg-yellow-100 dark:bg-yellow-900 rounded-full flex items-center justify-center mb-6">
+    <span class="material-icons-outlined text-primary text-3xl">star</span>
+  </div>
+
+  <h3 class="text-2xl font-display font-bold mb-4">Nuestros Valores</h3>
+
+  <ul class="text-gray-600 dark:text-gray-400 space-y-2">
+    <li>
+      <button onclick="openModal('integridad')" class="flex items-center hover:text-primary">
+        <span class="material-icons-outlined text-primary text-sm mr-2">check</span>Integridad
+      </button>
+    </li>
+    <li>
+      <button onclick="openModal('excelencia')" class="flex items-center hover:text-primary">
+        <span class="material-icons-outlined text-primary text-sm mr-2">check</span>Excelencia
+      </button>
+    </li>
+    <li>
+      <button onclick="openModal('servicio')" class="flex items-center hover:text-primary">
+        <span class="material-icons-outlined text-primary text-sm mr-2">check</span>Servicio
+      </button>
+    </li>
+    <li>
+      <button onclick="openModal('compromiso')" class="flex items-center hover:text-primary">
+        <span class="material-icons-outlined text-primary text-sm mr-2">check</span>Compromiso
+      </button>
+    </li>
+    <li>
+      <button onclick="openModal('innovacion')" class="flex items-center hover:text-primary">
+        <span class="material-icons-outlined text-primary text-sm mr-2">check</span>Innovación
+      </button>
+    </li>
+  </ul>
 </div>
-<h3 class="text-2xl font-display font-bold mb-4">Nuestros Valores</h3>
-<ul class="text-gray-600 dark:text-gray-400 space-y-2">
-<li class="flex items-center"><span class="material-icons-outlined text-primary text-sm mr-2">check</span>Integridad</li>
-<li class="flex items-center"><span class="material-icons-outlined text-primary text-sm mr-2">check</span>Excelencia</li>
-<li class="flex items-center"><span class="material-icons-outlined text-primary text-sm mr-2">check</span>Servicio</li>
-<li class="flex items-center"><span class="material-icons-outlined text-primary text-sm mr-2">check</span>Compromiso</li>
-<li class="flex items-center"><span class="material-icons-outlined text-primary text-sm mr-2">check</span>Innovación</li>
-</ul>
-</div>
+
 </div>
 
 <!-- Historia -->
@@ -99,31 +132,31 @@ tailwind.config = {
 <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 md:p-12 shadow-lg">
 <div class="prose prose-lg max-w-none dark:prose-invert">
 <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-Igledesarrollo nació en 2008 con una visión clara: transformar comunidades a través del desarrollo integral de sus líderes. Lo que comenzó como un pequeño grupo de voluntarios comprometidos, se ha convertido en una organización robusta que impacta miles de vidas cada año.
+Igledesarrollo tiene su origen en el programa de laicos establecido en 2017, con una visión clara: capacitar y transformar iglesias y comunidades cristianas mediante el desarrollo integral de sus líderes.  Lo que comenzó como un pequeño grupo de estudiantes y docentes comprometidos, se ha convertido en un ministerio robusto que impacta decenas de vidas anualmente.
 </p>
 <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-A lo largo de estos 15 años, hemos capacitado a más de 500 líderes, plantado 50 iglesias en diferentes regiones, y desarrollado programas innovadores que responden a las necesidades reales de las comunidades.
+A lo largo de estos ocho años, hemos capacitado a más de 70 líderes laicos, entrenado a 100 pastores y líderes, plantado cinco iglesias en Lima Metropolitana y estamos en proceso de desarrollo de programas innovadores que respondan a las necesidades reales de las comunidades.
 </p>
 <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-Hoy, seguimos comprometidos con nuestra visión original, pero con herramientas más sofisticadas, un equipo más experimentado, y una red de colaboradores que abarca todo el continente.
+Hoy, seguimos comprometidos con nuestra visión original, pero con herramientas más sofisticadas, un equipo más experimentado y una red de colaboradores que abarca todo el país.
 </p>
 </div>
 
 <div class="grid md:grid-cols-4 gap-6 mt-12">
 <div class="text-center">
-<div class="text-4xl font-display font-bold text-secondary mb-2">2008</div>
+<div class="text-4xl font-display font-bold text-secondary mb-2">2017</div>
 <div class="text-gray-600 dark:text-gray-400 text-sm">Año de fundación</div>
 </div>
 <div class="text-center">
-<div class="text-4xl font-display font-bold text-blue-600 mb-2">500+</div>
+<div class="text-4xl font-display font-bold text-blue-600 mb-2">70+</div>
 <div class="text-gray-600 dark:text-gray-400 text-sm">Líderes capacitados</div>
 </div>
 <div class="text-center">
-<div class="text-4xl font-display font-bold text-primary mb-2">50+</div>
+<div class="text-4xl font-display font-bold text-primary mb-2">4+</div>
 <div class="text-gray-600 dark:text-gray-400 text-sm">Iglesias plantadas</div>
 </div>
 <div class="text-center">
-<div class="text-4xl font-display font-bold text-purple-600 mb-2">30+</div>
+<div class="text-4xl font-display font-bold text-purple-600 mb-2">5+</div>
 <div class="text-gray-600 dark:text-gray-400 text-sm">Comunidades impactadas</div>
 </div>
 </div>
@@ -139,7 +172,7 @@ Hoy, seguimos comprometidos con nuestra visión original, pero con herramientas 
 <span class="material-icons-outlined text-white text-6xl">person</span>
 </div>
 <div class="p-6">
-<h3 class="font-display font-bold text-xl mb-1">Juan Pérez</h3>
+<h3 class="font-display font-bold text-xl mb-1">Mag. Aníbal López</h3>
 <p class="text-secondary text-sm mb-3">Director General</p>
 <p class="text-gray-600 dark:text-gray-400 text-sm">20 años de experiencia en desarrollo comunitario y liderazgo organizacional.</p>
 </div>
@@ -150,7 +183,7 @@ Hoy, seguimos comprometidos con nuestra visión original, pero con herramientas 
 <span class="material-icons-outlined text-white text-6xl">person</span>
 </div>
 <div class="p-6">
-<h3 class="font-display font-bold text-xl mb-1">María González</h3>
+<h3 class="font-display font-bold text-xl mb-1">Mag. Balentin Gonzales</h3>
 <p class="text-secondary text-sm mb-3">Directora de Programas</p>
 <p class="text-gray-600 dark:text-gray-400 text-sm">Especialista en diseño curricular y capacitación de líderes ministeriales.</p>
 </div>
@@ -172,9 +205,9 @@ Hoy, seguimos comprometidos con nuestra visión original, pero con herramientas 
 <span class="material-icons-outlined text-white text-6xl">person</span>
 </div>
 <div class="p-6">
-<h3 class="font-display font-bold text-xl mb-1">Ana Torres</h3>
-<p class="text-secondary text-sm mb-3">Coordinadora de Recursos</p>
-<p class="text-gray-600 dark:text-gray-400 text-sm">Editora y productora de contenido educativo multiplataforma.</p>
+<h3 class="font-display font-bold text-xl mb-1">Lic. Pilar Chapoñan</h3>
+<p class="text-secondary text-sm mb-3">Coordinadora de Eventos</p>
+<p class="text-gray-600 dark:text-gray-400 text-sm">Gestora de planificación, organización y ejecución de actividades y eventos institucionales. </p>
 </div>
 </div>
 </div>
@@ -184,25 +217,62 @@ Hoy, seguimos comprometidos con nuestra visión original, pero con herramientas 
 
 <!-- Socios Colaborativos -->
 <section class="bg-gray-100 dark:bg-gray-800 py-20">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<h2 class="text-4xl font-display font-bold text-center mb-6">Socios Colaborativos</h2>
-<p class="text-center text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-12">Trabajamos junto a organizaciones líderes para multiplicar nuestro impacto</p>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-<div class="bg-white dark:bg-gray-700 rounded-xl p-8 flex items-center justify-center hover:shadow-lg transition-all">
-<span class="text-4xl font-display font-bold text-gray-400">LOGO 1</span>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-4xl font-display font-bold text-center mb-6">
+      Socios Colaborativos
+    </h2>
+
+    <p class="text-center text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-12">
+      Trabajamos junto a organizaciones líderes para multiplicar nuestro impacto
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+
+      <!-- LOGO 1 -->
+      <div class="bg-white dark:bg-gray-700 rounded-xl p-8 flex flex-col items-center text-center hover:shadow-lg transition-all">
+  
+  <img src="logo-nazareno.png"
+       alt="Iglesia Nazareno"
+       class="max-h-20 object-contain grayscale hover:grayscale-0 transition" />
+
+  <p class="mt-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
+   Iglesia del Nazareno
+  </p>
+
 </div>
-<div class="bg-white dark:bg-gray-700 rounded-xl p-8 flex items-center justify-center hover:shadow-lg transition-all">
-<span class="text-4xl font-display font-bold text-gray-400">LOGO 2</span>
+
+      <!-- LOGO 2 -->
+     <div class="bg-white dark:bg-gray-700 rounded-xl p-8 flex flex-col items-center text-center hover:shadow-lg transition-all">
+  
+  <img src="logo-Peregrina.png"
+       alt="Iglesia Nazareno"
+       class="max-h-20 object-contain grayscale hover:grayscale-0 transition" />
+
+  <p class="mt-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
+    Iglesia Wesleyana y Peregrina
+  </p>
+
 </div>
-<div class="bg-white dark:bg-gray-700 rounded-xl p-8 flex items-center justify-center hover:shadow-lg transition-all">
-<span class="text-4xl font-display font-bold text-gray-400">LOGO 3</span>
+
+      <!-- LOGO 3 -->
+       <div class="bg-white dark:bg-gray-700 rounded-xl p-8 flex flex-col items-center text-center hover:shadow-lg transition-all">
+  
+  <img src="logo-seminario.png"
+       alt="Iglesia Nazareno"
+       class="max-h-20 object-contain grayscale hover:grayscale-0 transition" />
+
+  <p class="mt-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
+    Seminario Teológico Nazareno del Perú
+  </p>
+
 </div>
-<div class="bg-white dark:bg-gray-700 rounded-xl p-8 flex items-center justify-center hover:shadow-lg transition-all">
-<span class="text-4xl font-display font-bold text-gray-400">LOGO 4</span>
-</div>
-</div>
-</div>
+
+      
+
+    </div>
+  </div>
 </section>
+
 
 <!-- CTA -->
 <section class="py-20">
@@ -224,7 +294,7 @@ Hoy, seguimos comprometidos con nuestra visión original, pero con herramientas 
 <span class="material-icons-outlined text-primary text-3xl">agriculture</span>
 <span class="font-display font-bold text-white text-xl">Igle<span class="text-primary">Desa</span>Rrollo</span>
 </div>
-<p class="text-sm mb-6">© 2024 Igledesarrollo. Todos los derechos reservados.</p>
+<p class="text-sm mb-6">© 2026 Igledesarrollo. Todos los derechos reservados.</p>
 <div class="flex justify-center space-x-6">
 <a class="hover:text-primary transition-colors" href="index.html">Inicio</a>
 <a class="hover:text-primary transition-colors" href="programas.html">Programas</a>
@@ -235,11 +305,77 @@ Hoy, seguimos comprometidos con nuestra visión original, pero con herramientas 
 </div>
 </footer>
 
+
+<div id="modal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
+  <div class="bg-white dark:bg-gray-800 rounded-2xl max-w-lg w-full p-6 relative">
+    
+    <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-500 hover:text-red-500">
+      <span class="material-icons-outlined">close</span>
+    </button>
+
+    <h3 id="modalTitle" class="text-2xl font-bold mb-4"></h3>
+    <p id="modalContent" class="text-gray-600 dark:text-gray-300 leading-relaxed"></p>
+  </div>
+</div>
+
+
 <script>
 const menuBtn = document.getElementById('menuBtn');
 menuBtn?.addEventListener('click', () => {
   alert('Menú móvil - Implementar según necesidad');
 });
+
+
+
+ const valuesContent = {
+    integridad: {
+      title: "Integridad",
+      content: `Vivir con honestidad y coherencia entre lo que decimos y hacemos.
+      <br><br>
+      <em>“El que camina en integridad anda confiado, pero el que toma caminos torcidos será descubierto.”</em>
+      <br>— Proverbios 10:9`
+    },
+    excelencia: {
+      title: "Excelencia",
+      content: `Buscar la perfección en todo lo que hacemos, sirviendo con esmero.
+      <br><br>
+      <em>“Y todo lo que hagan, háganlo de corazón, como para el Señor y no como para los hombres.”</em>
+      <br>— Colosenses 3:23`
+    },
+    servicio: {
+      title: "Servicio",
+      content: `Ayudar y atender las necesidades de otros con amor y humildad.
+      <br><br>
+      <em>“Porque ni aun el Hijo del Hombre vino para ser servido, sino para servir.”</em>
+      <br>— Marcos 10:45`
+    },
+    compromiso: {
+      title: "Compromiso",
+      content: `Mantener la fidelidad y responsabilidad en nuestras acciones.
+      <br><br>
+      <em>“Cumple tus promesas aunque te cueste trabajo.”</em>
+      <br>— Salmos 15:4b`
+    },
+    innovacion: {
+      title: "Innovación",
+      content: `Ser creativos y abiertos al cambio, guiados por sabiduría divina.
+      <br><br>
+      <em>“He aquí, yo hago cosas nuevas; pronto saldrán a la luz.”</em>
+      <br>— Isaías 43:19`
+    }
+  };
+
+  function openModal(value) {
+    document.getElementById("modalTitle").innerHTML = valuesContent[value].title;
+    document.getElementById("modalContent").innerHTML = valuesContent[value].content;
+    document.getElementById("modal").classList.remove("hidden");
+    document.getElementById("modal").classList.add("flex");
+  }
+
+  function closeModal() {
+    document.getElementById("modal").classList.add("hidden");
+    document.getElementById("modal").classList.remove("flex");
+  }
 </script>
 
 </body>

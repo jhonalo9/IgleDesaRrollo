@@ -7,6 +7,7 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+
 <script>
 tailwind.config = {
   darkMode: "class",
@@ -15,6 +16,7 @@ tailwind.config = {
       colors: {
         primary: "#D4AF37",
         secondary: "#7FB069",
+        success: "#47BD39",
         "background-light": "#FAFAFA",
         "background-dark": "#1a1a1a",
         "card-light": "#ffffff",
@@ -38,9 +40,11 @@ tailwind.config = {
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-20">
 <div class="flex items-center space-x-3">
-<span class="material-icons-outlined text-primary text-4xl">agriculture</span>
+<!--<span class="material-icons-outlined text-primary text-4xl">agriculture</span>-->
+<img src="logo.png" alt="Logo" class="h-10 w-10 object-contain"/>
 <div class="flex flex-col leading-tight font-display font-bold text-lg tracking-tight text-gray-800 dark:text-white uppercase">
-<span>Igle<span class="text-primary">Desa</span>Rrollo</span>
+<span class="text-primary">Igle<span class="text-success">DesaRrollo </span></span>
+
 </div>
 </div>
 <nav class="hidden md:flex items-center space-x-8">
@@ -49,7 +53,7 @@ tailwind.config = {
 <a class="text-gray-600 dark:text-gray-300 hover:text-secondary font-semibold text-sm" href="programas.html">Programas</a>
 <a class="text-gray-600 dark:text-gray-300 hover:text-secondary font-semibold text-sm" href="servicios.html">Servicios</a>
 <a class="text-gray-600 dark:text-gray-300 hover:text-secondary font-semibold text-sm" href="recursos.html">Recursos</a>
-<a class="bg-secondary hover:bg-green-600 text-white px-5 py-2 rounded-lg transition-all font-semibold text-sm shadow-md hover:shadow-lg" href="#donar">Eventos</a>
+<a class="bg-secondary hover:bg-green-600 text-white px-5 py-2 rounded-lg transition-all font-semibold text-sm shadow-md hover:shadow-lg" href="donar.html">Donar</a>
 </nav>
 <button class="md:hidden text-gray-600 dark:text-gray-300 hover:text-primary focus:outline-none" id="menuBtn">
 <span class="material-icons-outlined text-3xl">menu</span>
@@ -402,7 +406,7 @@ Enviar mensaje
 </div>
 
 <div class="border-t border-gray-800 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center">
-<p class="text-sm">© 2024 Igledesarrollo. Todos los derechos reservados.</p>
+<p class="text-sm">© 2026 Igledesarrollo. Todos los derechos reservados.</p>
 <div class="flex space-x-6 mt-4 md:mt-0">
 <a class="hover:text-white transition-colors text-sm" href="#">Privacidad</a>
 <a class="hover:text-white transition-colors text-sm" href="#">Términos</a>
